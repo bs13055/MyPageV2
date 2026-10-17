@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resume & Profile v2 - Naphat Phanthong (บอส) นักศึกษา CAI สถาบันการจัดการปัญญาภิวัฒน์">
+    <title>Naphat Phanthong | My Page v2 (Profile & Resume)</title>
+    <!-- Google Fonts: Inter & Noto Sans Thai -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="เมนูหลัก">
+        <a class="nav-brand" href="index.html">
+          <span class="brand-badge">PIM</span>
+          <span class="brand-text">NAPHAT <strong>V2</strong></span>
+        </a>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">เกี่ยวกับฉัน</a>
+          <a href="#favourites" class="nav-link">อาหารโปรด</a>
+          <a href="#experience" class="nav-link">ประสบการณ์</a>
+          <a href="#skills" class="nav-link">ทักษะ</a>
+          <!-- Button เข้าสู่หน้าการติดต่อจาก index.html ตาม Requirement ข้อ 10 -->
+          <a href="contact.html" class="btn btn-nav">ติดต่อฉัน (Contact)</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- HERO / PROFILE SECTION -->
+      <!-- จัด layout ในรูปแบบ Table ตามข้อกำหนด slide 59 (2 - HTML) -->
+      <section class="hero-section" aria-label="ข้อมูลโปรไฟล์">
+        <div class="card hero-card">
+          <!-- Slide 59 Table Layout: Challenge ทำให้รูปกับ Text ห่างกันได้ด้วย CSS padding/border-spacing -->
+          <table class="profile-layout-table" role="presentation">
+            <tr>
+              <!-- Profile Picture Cell (ภาพทรงกลมตาม requirement) -->
+              <td class="profile-img-cell">
+                <div class="avatar-wrapper">
+                  <img src="pf.jpg" alt="รูปโปรไฟล์ของ ณภัทร พันทอง (Naphat Phanthong)" class="profile-img">
+                  <span class="status-indicator" title="พร้อมเปิดรับโอกาสใหม่ๆ"></span>
+                </div>
+              </td>
+
+              <!-- Profile Details Cell -->
+              <td class="profile-info-cell">
+                <div class="tag-row">
+                  <span class="badge badge-accent">STUDENT PROFILE</span>
+                  <span class="badge badge-subtle">ID: 6840078213</span>
+                  <span class="badge badge-subtle">SEC: เช้าวันจันทร์</span>
+                </div>
+                <h1 class="profile-name">ณภัทร พันทอง</h1>
+                <p class="profile-subname">Naphat Phanthong (บอส / Boss)</p>
+                
+                <div class="profile-meta-list">
+                  <div class="meta-item">
+                    <span class="meta-icon">🎓</span>
+                    <div>
+                      <strong>สถานะ / ตำแหน่ง:</strong>
+                      <span>นักศึกษา (Students)</span>
+                    </div>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-icon">💻</span>
+                    <div>
+                      <strong>สาขาวิชา:</strong>
+                      <span>วิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CAI - Computer Engineering &amp; Artificial Intelligence)</span>
+                    </div>
+                  </div>
+                  <div class="meta-item">
+                    <span class="meta-icon">🏛️</span>
+                    <div>
+                      <strong>สถาบันการศึกษา:</strong>
+                      <span>คณะวิศวกรรมศาสตร์และเทคโนโลยี สถาบันการจัดการปัญญาภิวัฒน์ (PIM)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-actions">
+                  <a href="contact.html" class="btn btn-primary">✉️ ส่งข้อความหาฉัน (Contact Me)</a>
+                  <a href="#about" class="btn btn-secondary">อ่านประวัติ ↓</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- ABOUT ME SECTION -->
+      <section id="about" class="content-section" aria-labelledby="about-title">
+        <div class="section-header">
+          <p class="section-eyebrow">ABOUT ME</p>
+          <h2 id="about-title" class="section-title">ประวัติสั้น ๆ เกี่ยวกับตัวฉัน</h2>
+        </div>
+        <div class="card about-card">
+          <div class="about-quote">
+            <p class="lang-en">
+              "Hello, I am Naphat, currently studying Computer Engineering and Artificial Intelligence at the Faculty of Engineering, Panyapiwat Institute of Management. 
+              I enjoy learning about new technologies, especially artificial intelligence, computers and modern technology."
+            </p>
+            <hr class="quote-divider">
+            <p class="lang-th">
+              "สวัสดีครับ ผมชื่อ ณภัทร (บอส) ปัจจุบันกำลังศึกษาสาขาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CAI) คณะวิศวกรรมศาสตร์และเทคโนโลยี สถาบันการจัดการปัญญาภิวัฒน์ 
+              ผมมีความสนใจและกระตือรือร้นในการเรียนรู้เทคโนโลยีใหม่ๆ อยู่เสมอ โดยเฉพาะด้านปัญญาประดิษฐ์ (AI), ระบบคอมพิวเตอร์ และเทคโนโลยีสมัยใหม่ที่สามารถนำมาพัฒนาต่อยอดเพื่อแก้ไขปัญหาจริงได้ครับ"
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <span class="highlight-emoji">🤖</span>
+              <h3>ความสนใจหลัก</h3>
+              <p>Artificial Intelligence, Machine Learning, Web Technologies และ Hardware Systems</p>
+            </div>
+            <div class="highlight-box">
+              <span class="highlight-emoji">🎯</span>
+              <h3>เป้าหมาย</h3>
+              <p>มุ่งมั่นพัฒนาทักษะการเขียนโปรแกรมและการคิดเชิงระบบ เพื่อสร้างสรรค์นวัตกรรม AI ที่มีคุณค่า</p>
+            </div>
+            <div class="highlight-box">
+              <span class="highlight-emoji">🤝</span>
+              <h3>จุดเด่นการทำงาน</h3>
+              <p>มีความรับผิดชอบ มนุษยสัมพันธ์ดี ทำงานเป็นทีมได้อย่างมีประสิทธิภาพ และพร้อมเรียนรู้สิ่งใหม่</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAVOURITE FOODS SECTION (ใช้ ol หรือ ul บอกสิ่งที่ชอบทาน 3 อย่าง) -->
+      <section id="favourites" class="content-section" aria-labelledby="favourites-title">
+        <div class="section-header">
+          <p class="section-eyebrow">FAVOURITE FOODS</p>
+          <h2 id="favourites-title" class="section-title">3 สิ่งที่ตัวเองชอบทาน</h2>
+          <p class="section-desc">เมนูโปรดเติมพลังสำหรับการเรียนและการโค้ดดิ้ง</p>
+        </div>
+        <!-- ใช้ ol ตามข้อกำหนดของอาจารย์ -->
+        <ol class="food-list">
+          <li class="food-item">
+            <div class="food-rank">01</div>
+            <div class="food-info">
+              <div class="food-header">
+                <span class="food-emoji">🍳</span>
+                <h3>ข้าวกะเพราหมูกรอบไข่ดาว</h3>
+              </div>
+              <p class="food-desc">
+                เมนูอาหารจานโปรดอันดับหนึ่ง รสชาติเผ็ดร้อน หอมกลิ่นใบกะเพราแท้ๆ ผัดคู่กับหมูกรอบเนื้อแน่นหนังกรอบฟู โปะด้วยไข่ดาวขอบกรอบไข่แดงเยิ้มๆ ทานคู่กับพริกน้ำปลาคือความสุขที่เรียบง่ายและอร่อยที่สุด
+              </p>
+              <div class="food-tags">
+                <span class="tag">#รสชาติจัดจ้าน</span>
+                <span class="tag">#เมนูสิ้นคิดที่อร่อยสุด</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="food-item">
+            <div class="food-rank">02</div>
+            <div class="food-info">
+              <div class="food-header">
+                <span class="food-emoji">🍲</span>
+                <h3>ชาบูและหมูกระทะ</h3>
+              </div>
+              <p class="food-desc">
+                อาหารแห่งการรวมตัวและเฉลิมฉลองหลังสอบ ชอบทั้งแบบชาบูน้ำซุปดำเข้มข้นสไตล์ญี่ปุ่น และหมูกระทะเตาถ่านที่ได้ปิ้งหมูสามชั้นเกรียมๆ จิ้มกับน้ำจิ้มสุกี้รสเด็ด ทานร่วมกับเพื่อนๆ พร้อมแลกเปลี่ยนเรื่องราวสนุกสนาน
+              </p>
+              <div class="food-tags">
+                <span class="tag">#สังสรรค์กับเพื่อน</span>
+                <span class="tag">#น้ำซุปกลมกล่อม</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="food-item">
+            <div class="food-rank">03</div>
+            <div class="food-info">
+              <div class="food-header">
+                <span class="food-emoji">🍜</span>
+                <h3>ราเมงทงคตสึ (Tonkotsu Ramen)</h3>
+              </div>
+              <p class="food-desc">
+                น้ำซุปกระดูกหมูที่เคี่ยวนานจนเข้มข้น หอมละมุน กลมกล่อม เสิร์ฟพร้อมเส้นราเมงเหนียวนุ่มกำลังดี ชาชูนุ่มละลายในปาก และไข่ต้มยางมะตูมหมักซอสญี่ปุ่น เป็นมื้อที่ช่วยผ่อนคลายและเพิ่มสมาธิได้เป็นอย่างดี
+              </p>
+              <div class="food-tags">
+                <span class="tag">#ซุปกระดูกหมูเข้มข้น</span>
+                <span class="tag">#คอมฟอร์ตฟู้ด</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="content-section" aria-labelledby="experience-title">
+        <div class="section-header">
+          <p class="section-eyebrow">WORK EXPERIENCE</p>
+          <h2 id="experience-title" class="section-title">ประสบการณ์การทำงาน</h2>
+          <p class="section-desc">การฝึกปฏิบัติงานจริงและการสั่งสมทักษะนอกห้องเรียน</p>
+        </div>
+        
+        <div class="card experience-card">
+          <!-- ตารางแสดงประสบการณ์ตามแนวทาง Slide 60 (2 - HTML) -->
+          <div class="table-responsive">
+            <table class="experience-table">
+              <thead>
+                <tr>
+                  <th scope="col" style="width: 22%;">ช่วงเวลา (Period)</th>
+                  <th scope="col" style="width: 28%;">สถานที่ปฏิบัติงาน (Work Place)</th>
+                  <th scope="col" style="width: 22%;">ตำแหน่ง (Position)</th>
+                  <th scope="col" style="width: 28%;">รายละเอียดและทักษะที่ได้รับ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="period-pill">Part-time</span>
+                  </td>
+                  <td>
+                    <strong>ศูนย์การประชุมแห่งชาติสิริกิติ์</strong><br>
+                    <span class="text-muted">Queen Sirikit National Convention Center (QSNCC)</span>
+                  </td>
+                  <td>
+                    <strong>Book Fair Staff</strong><br>
+                    <span class="text-muted">(พนักงานประจำงานสัปดาห์หนังสือ)</span>
+                  </td>
+                  <td>
+                    Worked part-time selling books at a book fair. Gained experience in customer service, communication, and teamwork.<br>
+                    <small class="text-muted">ดูแลการขาย บริการลูกค้า การแนะนำหนังสือ และประสานงานทีมอย่างราบรื่น</small>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="period-pill period-intern">3 Months</span>
+                  </td>
+                  <td>
+                    <strong>7-Eleven</strong><br>
+                    <span class="text-muted">บริษัท ซีพี ออลล์ จำกัด (มหาชน)</span>
+                  </td>
+                  <td>
+                    <strong>7-Eleven Intern</strong><br>
+                    <span class="text-muted">(นักศึกษาฝึกงานภาคปฏิบัติ)</span>
+                  </td>
+                  <td>
+                    Completed a three-month internship in a retail working environment. Developed communication, teamwork, and practical workplace skills.<br>
+                    <small class="text-muted">ฝึกทักษะการทำงานจริงในระบบค้าปลีก การบริหารสินค้า การสื่อสาร และการแก้ปัญหาเฉพาะหน้า</small>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <!-- กำหนดให้มี 4 column ใช้ Table ตามข้อกำหนด Slide 60 (2 - HTML) -->
+      <section id="skills" class="content-section" aria-labelledby="skills-title">
+        <div class="section-header">
+          <p class="section-eyebrow">SKILLS &amp; PROFICIENCY</p>
+          <h2 id="skills-title" class="section-title">ทักษะและระดับพลัง (Skills Table - 4 Columns)</h2>
+          <p class="section-desc">จัดรูปแบบตาม Slide 60: 4 Columns (ทักษะ | ระดับพลัง | ทักษะ | ระดับพลัง)</p>
+        </div>
+
+        <div class="card skills-card">
+          <div class="table-responsive">
+            <!-- 4 Column Table according to slide 60 requirement -->
+            <table class="skills-table">
+              <thead>
+                <tr>
+                  <th scope="col">ทักษะด้านเทคโนโลยี (Tech Skill)</th>
+                  <th scope="col">ระดับพลัง</th>
+                  <th scope="col">ทักษะการทำงานและการสื่อสาร (Soft Skill)</th>
+                  <th scope="col">ระดับพลัง</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>Python &amp; AI Fundamentals</strong><br>
+                    <small class="text-muted">การเขียนโปรแกรมและการเรียนรู้โมเดล AI เบื้องต้น</small>
+                  </td>
+                  <td>
+                    <span class="star-rating" aria-label="4 จาก 5 ดาว">
+                      <span class="stars-active">★★★★</span><span class="stars-dim">☆</span>
+                    </span>
+                  </td>
+                  <td>
+                    <strong>Customer Service &amp; Communication</strong><br>
+                    <small class="text-muted">การสื่อสาร การดูแลลูกค้า และการนำเสนอข้อมูล</small>
+                  </td>
+                  <td>
+                    <span class="star-rating" aria-label="5 จาก 5 ดาว">
+                      <span class="stars-active">★★★★★</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>HTML5 &amp; CSS3 Web Design</strong><br>
+                    <small class="text-muted">การสร้างโครงสร้างเว็บและการจัดสไตล์ให้สวยงาม</small>
+                  </td>
+                  <td>
+                    <span class="star-rating" aria-label="4 จาก 5 ดาว">
+                      <span class="stars-active">★★★★</span><span class="stars-dim">☆</span>
+                    </span>
+                  </td>
+                  <td>
+                    <strong>Teamwork &amp; Collaboration</strong><br>
+                    <small class="text-muted">การทำงานเป็นทีมและการปรับตัวเข้ากับสภาพแวดล้อม</small>
+                  </td>
+                  <td>
+                    <span class="star-rating" aria-label="5 จาก 5 ดาว">
+                      <span class="stars-active">★★★★★</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Computer Hardware &amp; Systems</strong><br>
+                    <small class="text-muted">ความเข้าใจสถาปัตยกรรมคอมพิวเตอร์และอุปกรณ์ไอที</small>
+                  </td>
+                  <td>
+                    <span class="star-rating" aria-label="4 จาก 5 ดาว">
+                      <span class="stars-active">★★★★</span><span class="stars-dim">☆</span>
+                    </span>
+                  </td>
+                  <td>
+                    <strong>Problem Solving &amp; Adaptability</strong><br>
+                    <small class="text-muted">การคิดแก้ปัญหาเฉพาะหน้าและการเรียนรู้อย่างรวดเร็ว</small>
+                  </td>
+                  <td>
+                    <span class="star-rating" aria-label="4 จาก 5 ดาว">
+                      <span class="stars-active">★★★★</span><span class="stars-dim">☆</span>
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Data &amp; Database Basics (SQL)</strong><br>
+                    <small class="text-muted">การจัดการฐานข้อมูลและการสืบค้นข้อมูล</small>
+                  </td>
+                  <td>
+                    <span class="star-rating" aria-label="3 จาก 5 ดาว">
+                      <span class="stars-active">★★★</span><span class="stars-dim">☆☆</span>
+                    </span>
+                  </td>
+                  <td>
+                    <strong>English for Communication</strong><br>
+                    <small class="text-muted">การอ่านทำความเข้าใจเอกสารเทคนิคและการสื่อสาร</small>
+                  </td>
+                  <td>
+                    <span class="star-rating" aria-label="3 จาก 5 ดาว">
+                      <span class="stars-active">★★★</span><span class="stars-dim">☆☆</span>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION SECTION -->
+      <section class="cta-section">
+        <div class="card cta-card">
+          <h2>สนใจร่วมงานหรือต้องการติดต่อผม?</h2>
+          <p>สามารถส่งข้อความสอบถามหรือทักทายได้ผ่านแบบฟอร์มหน้าการติดต่อ</p>
+          <a href="contact.html" class="btn btn-primary btn-large">📬 ไปยังหน้าแบบฟอร์มติดต่อ (Contact Form)</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION (ตามข้อกำหนด: ใส่ link Github และ contact.html) -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-info">
+          <p class="footer-author"><strong>ณภัทร พันทอง (Naphat Phanthong)</strong> - Nickname: บอส (Boss)</p>
+          <p class="footer-sub">รหัสนักศึกษา 6840078213 | สาขาวิศวกรรมคอมพิวเตอร์และปัญญาประดิษฐ์ (CAI) | PIM</p>
+          <p class="footer-course">Full Stack Web Development (Homework # 3: 3.10 MyPage v2)</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer-link">
+            <span class="link-icon">🐙</span> GitHub
+          </a>
+          <a href="contact.html" class="footer-link">
+            <span class="link-icon">✉️</span> Contact Form
+          </a>
+          <a href="#top" class="footer-link top-link">
+            ↑ กลับด้านบน
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Naphat Phanthong. Designed with semantic HTML &amp; modern CSS.</p>
+      </div>
+    </footer>
+  </body>
+</html>
