@@ -92,8 +92,9 @@ img {
 }
 
 .nav-container {
-  max-width: 1160px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
   padding: 14px 24px;
   display: flex;
   align-items: center;
